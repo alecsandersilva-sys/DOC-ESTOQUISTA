@@ -1,0 +1,45 @@
+<svg width="1200" height="520" viewBox="0 0 1200 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="520" rx="32" fill="#F7FBF8"/>
+  <rect x="40" y="70" width="220" height="160" rx="24" fill="white" stroke="#D6E7DE"/>
+  <rect x="300" y="70" width="220" height="160" rx="24" fill="white" stroke="#D6E7DE"/>
+  <rect x="560" y="70" width="220" height="160" rx="24" fill="white" stroke="#D6E7DE"/>
+  <rect x="820" y="70" width="220" height="160" rx="24" fill="white" stroke="#D6E7DE"/>
+  <rect x="170" y="300" width="220" height="160" rx="24" fill="white" stroke="#D6E7DE"/>
+  <rect x="430" y="300" width="220" height="160" rx="24" fill="white" stroke="#D6E7DE"/>
+  <rect x="690" y="300" width="220" height="160" rx="24" fill="white" stroke="#D6E7DE"/>
+  <path d="M260 150H300" stroke="#06563E" stroke-width="4" stroke-linecap="round"/>
+  <path d="M520 150H560" stroke="#06563E" stroke-width="4" stroke-linecap="round"/>
+  <path d="M780 150H820" stroke="#06563E" stroke-width="4" stroke-linecap="round"/>
+  <path d="M930 230V270H800" stroke="#06563E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M670 380H690" stroke="#06563E" stroke-width="4" stroke-linecap="round"/>
+  <path d="M390 380H430" stroke="#06563E" stroke-width="4" stroke-linecap="round"/>
+  <path d="M170 380H120V150H40" stroke="#06563E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.45"/>
+  <rect x="64" y="92" width="54" height="54" rx="16" fill="#06563E"/>
+  <rect x="324" y="92" width="54" height="54" rx="16" fill="#A0C818"/>
+  <rect x="584" y="92" width="54" height="54" rx="16" fill="#42BFDD"/>
+  <rect x="844" y="92" width="54" height="54" rx="16" fill="#FFBC0A"/>
+  <rect x="194" y="322" width="54" height="54" rx="16" fill="#06563E"/>
+  <rect x="454" y="322" width="54" height="54" rx="16" fill="#42BFDD"/>
+  <rect x="714" y="322" width="54" height="54" rx="16" fill="#F0403A"/>
+  <text x="64" y="178" fill="#103427" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">1. Seleção da loja</text>
+  <text x="64" y="210" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">Estoquista escolhe a unidade e abre a</text>
+  <text x="64" y="234" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">rotina oficial de contagem.</text>
+  <text x="324" y="178" fill="#103427" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">2. Geração da base</text>
+  <text x="324" y="210" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">Sistema prepara os itens e o saldo</text>
+  <text x="324" y="234" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">que será comparado com a loja.</text>
+  <text x="584" y="178" fill="#103427" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">3. Contagem física</text>
+  <text x="584" y="210" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">Operador ajusta sistema x físico, trata</text>
+  <text x="584" y="234" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">deltas e mede acurácia.</text>
+  <text x="844" y="178" fill="#103427" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">4. Checklist com prova</text>
+  <text x="844" y="210" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">Tarefas da loja exigem conclusão,</text>
+  <text x="844" y="234" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">foto antes e foto depois.</text>
+  <text x="194" y="408" fill="#103427" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">5. Relatório final</text>
+  <text x="194" y="440" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">A contagem fecha com histórico,</text>
+  <text x="194" y="464" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">divergência e tratativa.</text>
+  <text x="454" y="408" fill="#103427" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">6. Visão gerencial</text>
+  <text x="454" y="440" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">Supervisor filtra lojas, acompanha</text>
+  <text x="454" y="464" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">responsáveis e abre detalhes laterais.</text>
+  <text x="714" y="408" fill="#103427" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">7. Evolução real</text>
+  <text x="714" y="440" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">Fluxo pronto para Sankhya, e-mail</text>
+  <text x="714" y="464" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">e storage dedicado de evidência.</text>
+</svg>

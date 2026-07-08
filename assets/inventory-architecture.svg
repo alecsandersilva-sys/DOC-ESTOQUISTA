@@ -1,0 +1,44 @@
+<svg width="1200" height="640" viewBox="0 0 1200 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="640" rx="32" fill="#F7FBF8"/>
+  <rect x="60" y="96" width="240" height="170" rx="24" fill="white" stroke="#D6E7DE"/>
+  <rect x="360" y="96" width="240" height="170" rx="24" fill="white" stroke="#D6E7DE"/>
+  <rect x="660" y="96" width="240" height="170" rx="24" fill="white" stroke="#D6E7DE"/>
+  <rect x="960" y="96" width="180" height="170" rx="24" fill="white" stroke="#D6E7DE"/>
+  <rect x="180" y="360" width="260" height="190" rx="24" fill="white" stroke="#D6E7DE"/>
+  <rect x="500" y="360" width="260" height="190" rx="24" fill="white" stroke="#D6E7DE"/>
+  <rect x="820" y="360" width="260" height="190" rx="24" fill="white" stroke="#D6E7DE"/>
+  <path d="M300 181H360" stroke="#06563E" stroke-width="4" stroke-linecap="round"/>
+  <path d="M600 181H660" stroke="#06563E" stroke-width="4" stroke-linecap="round"/>
+  <path d="M900 181H960" stroke="#06563E" stroke-width="4" stroke-linecap="round"/>
+  <path d="M750 266V315H630" stroke="#06563E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M480 455H500" stroke="#06563E" stroke-width="4" stroke-linecap="round"/>
+  <path d="M760 455H820" stroke="#06563E" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="130" cy="150" r="28" fill="#06563E"/>
+  <circle cx="430" cy="150" r="28" fill="#A0C818"/>
+  <circle cx="730" cy="150" r="28" fill="#42BFDD"/>
+  <circle cx="1015" cy="150" r="28" fill="#FFBC0A"/>
+  <circle cx="250" cy="414" r="28" fill="#06563E"/>
+  <circle cx="570" cy="414" r="28" fill="#42BFDD"/>
+  <circle cx="890" cy="414" r="28" fill="#F0403A"/>
+  <text x="98" y="202" fill="#103427" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Portal Lev</text>
+  <text x="88" y="236" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">Contagem, checklist,</text>
+  <text x="88" y="260" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">histórico e supervisão.</text>
+  <text x="392" y="202" fill="#103427" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Módulo Inventory</text>
+  <text x="388" y="236" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">Regras do backend,</text>
+  <text x="388" y="260" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">contratos e persistência.</text>
+  <text x="694" y="202" fill="#103427" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Snapshot provider</text>
+  <text x="688" y="236" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">Hoje mock, amanhã</text>
+  <text x="688" y="260" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">Sankhya real.</text>
+  <text x="982" y="202" fill="#103427" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Notifier</text>
+  <text x="982" y="236" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">Relatório mock e</text>
+  <text x="982" y="260" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">e-mail futuro.</text>
+  <text x="218" y="466" fill="#103427" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Banco operacional</text>
+  <text x="218" y="500" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">Counts, items, events,</text>
+  <text x="218" y="524" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">templates e vínculos.</text>
+  <text x="538" y="466" fill="#103427" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Governança</text>
+  <text x="538" y="500" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">Política de horário,</text>
+  <text x="538" y="524" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">papéis e auditoria.</text>
+  <text x="858" y="466" fill="#103427" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Evolução real</text>
+  <text x="858" y="500" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">Storage de fotos,</text>
+  <text x="858" y="524" fill="#4F6E62" font-family="Segoe UI, Arial, sans-serif" font-size="18">retorno ao Sankhya e SLA.</text>
+</svg>
