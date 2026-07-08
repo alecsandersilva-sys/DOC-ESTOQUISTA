@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Estoquista e supervisor| Apresentação Visual</title>
+    <meta
+      name="description"
+      content="Apresentação visual e técnica do módulo Estoque do Portal Lev, com demonstração interativa local."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero" id="topo">
+        <nav class="hero-nav">
+          <a class="brand-lockup" href="#topo">
+            <img src="./assets/lev-logo-full.svg" alt="Lev" class="brand-logo" />
+            <span>Projeto Estoquista/supervisor</span>
+          </a>
+
+          <div class="hero-links">
+            <a href="#visao-geral">Visão geral</a>
+            <a href="#riscos">Riscos</a>
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#modulos">Módulos</a>
+            <a href="#demo">Demonstração</a>
+            <a href="#arquitetura">Arquitetura</a>
+            <a href="#banco">Banco de dados</a>
+            <a href="#proximos-passos">Próximos passos</a>
+          </div>
+        </nav>
+
+        <section class="hero-content">
+          <div class="hero-copy">
+            <span class="eyebrow">Portal Lev • Estoque • Operação assistida</span>
+            <h1>Uma operação de contagem mais confiável, rastreável e pronta para integração real.</h1>
+            <p class="hero-lead">
+              Este material apresenta o módulo <strong>Estoque</strong> construído para o Portal Lev:
+              o que ele resolve, como funciona no dia a dia, quais módulos já existem, como a demo
+              pode ser usada em apresentação e o que será necessário para ligar tudo a um banco e ao
+              Sankhya em produção.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#demo">Abrir demonstração</a>
+              <a class="button button-secondary" href="#banco">Ver estrutura de dados</a>
+            </div>
+
+            <div class="hero-metrics">
+              <article class="metric-card">
+                <strong>2 perfis centrais</strong>
+                <span>Estoquista e supervisor com visões próprias do fluxo.</span>
+              </article>
+              <article class="metric-card">
+                <strong>1 histórico completo</strong>
+                <span>Contagem, divergência, tratativa e evidência antes/depois.</span>
+              </article>
+              <article class="metric-card">
+                <strong>Pronto para evoluir</strong>
+                <span>Mock persistente agora, integração real depois.</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-visual-card">
+            <div class="hero-visual-frame hero-visual-frame-wide hero-portal-frame">
+              <div class="hero-portal-preview" aria-label="Prévia visual do portal de estoque">
+                <div class="hero-portal-topbar">
+                  <div class="hero-portal-brand">
+                    <img src="./assets/lev-logo-full.svg" alt="Lev" class="hero-portal-logo" />
+                    <div class="hero-portal-greeting">
+                      <span>Departamento do portal</span>
+                      <strong>Olá, ALECSANDER</strong>
+                    </div>
+                  </div>
+                  <div class="hero-portal-actions">
+                    <span class="hero-portal-button hero-portal-button-light">Voltar ao portal</span>
+                    <span class="hero-portal-button hero-portal-button-dark">Encerrar sessão</span>
+                  </div>
+                </div>
+
+                <div class="hero-portal-department">
+                  <div class="hero-portal-badge">EQ</div>
+                  <div class="hero-portal-copy">
+                    <strong>Estoque</strong>
+                    <span>Contagem por loja, divergências e acompanhamento operacional do estoque.</span>
+                  </div>
+                </div>
+
+                <div class="hero-portal-tools">
+                  <div class="hero-portal-tools-head">
+                    <strong>Ferramentas do departamento</strong>
+                    <span>Selecione uma ferramenta para iniciar o fluxo do departamento.</span>
+                  </div>
+                  <div class="hero-portal-tool-grid">
+                    <article class="hero-portal-tool-card">
+                      <strong>Contagem</strong>
+                      <span>Gera a contagem da loja, registra a conferência física e fecha o relatório de divergência.</span>
+                    </article>
+                    <article class="hero-portal-tool-card">
+                      <strong>Supervisor</strong>
+                      <span>Acompanha o andamento das lojas, ajusta checklist, janela de contagem e atribui estoquistas.</span>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <img
+                src="./assets/hero-estoque.png"
+                alt="Ilustração institucional do projeto de contagem de estoque"
+                class="hero-visual-image hero-visual-image-photo"
+                loading="eager"
+                decoding="async"
+              />
+            </div>
+            <div class="hero-visual-caption">
+              <strong>Visão do projeto</strong>
+              <span>Supervisor, estoquista e operação conectados pela mesma fonte de verdade.</span>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <main class="content-stack">
+        <section class="panel section-intro" id="visao-geral">
+          <div class="section-heading">
+            <span class="eyebrow">Visão geral</span>
+            <h2>Por que essa ferramenta faz sentido para a operação</h2>
+            <p>
+              Hoje, a contagem de estoque depende muito de rotinas paralelas, alinhamentos manuais,
+              cópias por e-mail e conferências que nem sempre ficam centralizadas. O módulo Estoque
+              nasce para reunir o processo em um só lugar: gerar a contagem, executar o checklist,
+              registrar divergências, anexar provas e manter histórico consultável por loja, pessoa,
+              data e revisão.
+            </p>
+          </div>
+
+          <div class="benefit-grid">
+            <article class="info-card accent-emerald">
+              <h3>Padronização da rotina</h3>
+              <p>
+                Todos os estoquistas seguem o mesmo fluxo no portal, com a mesma ordem de trabalho,
+                o mesmo checklist e o mesmo critério de fechamento.
+              </p>
+            </article>
+            <article class="info-card accent-lime">
+              <h3>Rastreabilidade operacional</h3>
+              <p>
+                Cada contagem fica registrada com responsável, loja, data, revisão, divergência,
+                tratativa e evidências visuais de execução.
+              </p>
+            </article>
+            <article class="info-card accent-cyan">
+              <h3>Visão gerencial imediata</h3>
+              <p>
+                O supervisor consegue acompanhar pendências, reaberturas, acurácia, checklist padrão
+                e alocação de estoquistas sem depender de consolidação externa.
+              </p>
+            </article>
+            <article class="info-card accent-gold">
+              <h3>Base para integração real</h3>
+              <p>
+                O módulo já foi desenhado para receber saldo do Sankhya, enviar relatórios reais e
+                evoluir a evidência para storage próprio quando a operação pedir.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel" id="riscos">
+          <div class="section-heading">
+            <span class="eyebrow">Riscos de não ter a ferramenta</span>
+            <h2>O custo operacional de continuar sem uma rotina centralizada</h2>
+            <p>
+              Quando a empresa não possui uma ferramenta dedicada para a contagem de estoque, o
+              processo fica vulnerável a desvios silenciosos, retrabalho e baixa capacidade de reação.
+              O problema não é só demorar mais para contar, mas perder governança sobre o que
+              realmente aconteceu em cada loja.
+            </p>
+          </div>
+
+          <div class="risk-grid">
+            <article class="risk-card">
+              <span class="risk-level risk-high">Risco alto</span>
+              <h3>Baixa rastreabilidade</h3>
+              <p>
+                Sem histórico estruturado, a empresa perde contexto sobre divergência, responsável,
+                tratativa aplicada e reincidência do problema por loja ou por período.
+              </p>
+            </article>
+            <article class="risk-card">
+              <span class="risk-level risk-high">Risco alto</span>
+              <h3>Decisão baseada em percepção</h3>
+              <p>
+                Supervisor e liderança passam a depender de mensagem, planilha, memória operacional e
+                envio manual, em vez de uma fonte única e auditável.
+              </p>
+            </article>
+            <article class="risk-card">
+              <span class="risk-level risk-medium">Risco médio</span>
+              <h3>Falha de padrão entre lojas</h3>
+              <p>
+                Cada unidade pode executar a contagem de um jeito diferente, com critérios distintos
+                para checklist, fechamento, tratativa e controle de evidência.
+              </p>
+            </article>
+            <article class="risk-card">
+              <span class="risk-level risk-high">Risco alto</span>
+              <h3>Sem prova operacional</h3>
+              <p>
+                Quando não existe evidência visual antes/depois, a empresa perde força para validar se
+                a rotina foi realmente executada e em que condição ela foi entregue.
+              </p>
+            </article>
+            <article class="risk-card">
+              <span class="risk-level risk-medium">Risco médio</span>
+              <h3>Retrabalho gerencial</h3>
+              <p>
+                O supervisor gasta energia cobrando status, consolidando pendências e reconstituindo
+                o processo em vez de atuar na causa raiz e na mobilização da operação.
+              </p>
+            </article>
+            <article class="risk-card">
+              <span class="risk-level risk-high">Risco alto</span>
+              <h3>Dificuldade de integração futura</h3>
+              <p>
+                Sem um fluxo definido agora, a ligação posterior com Sankhya, storage real e relatórios
+                oficiais tende a sair mais cara, mais lenta e mais sujeita a retrabalho.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel" id="como-funciona">
+          <div class="section-heading">
+            <span class="eyebrow">Como funciona</span>
+            <h2>Fluxo operacional desenhado para o dia a dia da loja</h2>
+            <p>
+              A proposta da ferramenta não é só contar itens. Ela organiza uma rotina inteira:
+              seleção de loja, geração do saldo do sistema, execução física, checklist obrigatório,
+              registro de prova, fechamento do relatório e acompanhamento gerencial.
+            </p>
+          </div>
+
+          <div class="story-columns">
+            <article class="story-card">
+              <span class="story-index">01</span>
+              <h3>Fluxo do estoquista</h3>
+              <ul>
+                <li>Seleciona a loja e gera a contagem.</li>
+                <li>Recebe os itens puxados do mock que representa o saldo do sistema.</li>
+                <li>Conta fisicamente com apoio de botões de ajuste e leitura clara da diferença.</li>
+                <li>Executa o checklist da loja com foto antes e depois por tarefa.</li>
+                <li>Finaliza somente quando divergências e evidências obrigatórias estiverem tratadas.</li>
+                <li>Consulta o próprio histórico com detalhamento completo da revisão.</li>
+              </ul>
+            </article>
+
+            <article class="story-card">
+              <span class="story-index">02</span>
+              <h3>Fluxo do supervisor</h3>
+              <ul>
+                <li>Define a janela oficial de contagem por horário.</li>
+                <li>Gerencia o checklist padrão que passa a valer para novas contagens.</li>
+                <li>Pesquisa colaboradores por nome ou CPF e agrega às lojas.</li>
+                <li>Visualiza dashboard com lojas pendentes, em andamento, concluídas e reabertas.</li>
+                <li>Abre qualquer contagem para revisar divergências, tratativas e provas.</li>
+                <li>Pode reabrir revisões quando o processo exigir nova conferência.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="flow-board">
+            <article class="flow-step">
+              <span class="flow-number">01</span>
+              <h3>Seleção da loja</h3>
+              <p>O estoquista abre a rotina oficial e define a unidade que será auditada.</p>
+            </article>
+            <article class="flow-step">
+              <span class="flow-number">02</span>
+              <h3>Geração da base</h3>
+              <p>O sistema monta a base de itens e quantidades para comparação com o físico.</p>
+            </article>
+            <article class="flow-step">
+              <span class="flow-number">03</span>
+              <h3>Contagem física</h3>
+              <p>Sistema x físico é ajustado item a item, com leitura rápida do delta e da acurácia.</p>
+            </article>
+            <article class="flow-step">
+              <span class="flow-number">04</span>
+              <h3>Checklist com prova</h3>
+              <p>Cada tarefa da loja pode exigir execução, foto antes e foto depois.</p>
+            </article>
+            <article class="flow-step">
+              <span class="flow-number">05</span>
+              <h3>Relatório final</h3>
+              <p>A revisão fecha com divergência, tratativa, acurácia e histórico consultável.</p>
+            </article>
+            <article class="flow-step">
+              <span class="flow-number">06</span>
+              <h3>Leitura gerencial</h3>
+              <p>O supervisor filtra, acompanha pendências, reabre revisões e conduz tratativas offline.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel" id="modulos">
+          <div class="section-heading">
+            <span class="eyebrow">Módulos do sistema</span>
+            <h2>O que foi construído e qual o papel de cada frente</h2>
+            <p>
+              O projeto foi organizado em frentes que refletem o trabalho real do estoquista, a
+              leitura gerencial do supervisor e a camada técnica necessária para sustentar a evolução.
+            </p>
+          </div>
+
+          <div class="module-grid">
+            <article class="module-card">
+              <span class="module-tag">Estoquista</span>
+              <h3>Contagem</h3>
+              <p>
+                Área central do sistema x físico. Exibe saldo do sistema, contador físico, delta,
+                justificativas, acurácia e relatório final da revisão.
+              </p>
+            </article>
+
+            <article class="module-card">
+              <span class="module-tag">Estoquista</span>
+              <h3>Checklist</h3>
+              <p>
+                Tarefas da loja aplicadas pelo supervisor. Agora cada item pode exigir conclusão,
+                foto antes e foto depois como prova da execução.
+              </p>
+            </article>
+
+            <article class="module-card">
+              <span class="module-tag">Estoquista</span>
+              <h3>Histórico</h3>
+              <p>
+                Lista as contagens já realizadas e abre um detalhe lateral completo para revisão de
+                sistema x físico, divergências, tratativas e evidências.
+              </p>
+            </article>
+
+            <article class="module-card">
+              <span class="module-tag">Supervisor</span>
+              <h3>Dashboard</h3>
+              <p>
+                Resume o andamento do dia e concentra filtros por data, loja e status para leitura
+                rápida da operação.
+              </p>
+            </article>
+
+            <article class="module-card">
+              <span class="module-tag">Supervisor</span>
+              <h3>Gerenciar estoquistas</h3>
+              <p>
+                Troca a lógica de grade por busca orientada. O supervisor pesquisa por nome ou CPF,
+                agrega à loja e mantém uma visão limpa de quem já está vinculado.
+              </p>
+            </article>
+
+            <article class="module-card">
+              <span class="module-tag">Supervisor</span>
+              <h3>Gerenciar checklist</h3>
+              <p>
+                Define o template operacional que será aplicado às novas contagens, inclusive com a
+                lógica de evidência por foto antes/depois.
+              </p>
+            </article>
+
+            <article class="module-card">
+              <span class="module-tag">Supervisor</span>
+              <h3>Contagens realizadas</h3>
+              <p>
+                Histórico consolidado do supervisor com filtros por responsável, loja, acurácia,
+                data e status, além de detalhe lateral clicável.
+              </p>
+            </article>
+
+            <article class="module-card">
+              <span class="module-tag">Camada de base</span>
+              <h3>Mock persistente</h3>
+              <p>
+                Massa de teste local, contratos REST do módulo, persistência em tabelas próprias e
+                preparo para a troca futura da fonte de saldo e das notificações.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel panel-demo" id="demo">
+          <div class="section-heading">
+            <span class="eyebrow">Demonstração interativa</span>
+            <h2>Uma versão local para apresentar e navegar sem abrir o painel real</h2>
+            <p>
+              Abaixo está uma prévia semi-operacional da ferramenta. Ela não depende de API, login
+              nem banco real. O objetivo é ajudar em apresentação, treinamento inicial, alinhamento
+              com liderança e conversa de evolução do produto.
+            </p>
+          </div>
+
+          <div class="demo-tabs" role="tablist" aria-label="Modos de demonstração">
+            <button class="demo-tab is-active" data-demo-mode="estoquista" type="button">
+              Visão do estoquista
+            </button>
+            <button class="demo-tab" data-demo-mode="supervisor" type="button">
+              Visão do supervisor
+            </button>
+          </div>
+
+          <div class="demo-stage">
+            <aside class="demo-sidebar">
+              <div class="demo-sidebar-head">
+                <span class="eyebrow">Navegação mock</span>
+                <strong id="demo-sidebar-title">Mesa do estoquista</strong>
+              </div>
+              <div class="demo-sidebar-list" id="demo-sidebar-list"></div>
+            </aside>
+
+            <section class="demo-workspace">
+              <div class="demo-toolbar">
+                <div>
+                  <span class="eyebrow">Ambiente de apresentação</span>
+                  <h3 id="demo-title">Contagem da loja</h3>
+                </div>
+                <div class="toolbar-meta">
+                  <span class="chip">Mock interativo</span>
+                  <span class="chip chip-outline">Sem API</span>
+                </div>
+              </div>
+
+              <div class="demo-summary" id="demo-summary"></div>
+              <div class="demo-panel" id="demo-panel"></div>
+            </section>
+          </div>
+
+          <div class="drawer" id="demo-drawer" aria-hidden="true">
+            <div class="drawer-scrim" data-close-drawer="true"></div>
+            <aside class="drawer-panel">
+              <button class="drawer-close" type="button" data-close-drawer="true">Fechar</button>
+              <div class="drawer-content" id="drawer-content"></div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="panel" id="arquitetura">
+          <div class="section-heading">
+            <span class="eyebrow">Arquitetura e integração real</span>
+            <h2>Como essa solução se conecta ao processo oficial da operação</h2>
+            <p>
+              O módulo atual roda em mock, mas sua estrutura já foi desenhada para a troca por uma
+              integração real. Isso reduz retrabalho no momento de conectar o saldo oficial do
+              sistema, persistir evidências em storage apropriado e enviar relatórios para canais
+              oficiais.
+            </p>
+          </div>
+
+          <div class="architecture-layout">
+            <div class="diagram-card">
+              <img
+                src="./assets/inventory-architecture.svg"
+                alt="Diagrama simplificado da arquitetura do módulo estoque"
+                class="diagram-image"
+              />
+            </div>
+
+            <div class="architecture-notes">
+              <article class="note-card">
+                <h3>Origem futura das contagens</h3>
+                <p>
+                  A visão real deve consultar o <strong>Sankhya</strong>, olhando o estoque
+                  <strong>3005</strong>, filtrando apenas saldo positivo e restringindo o conjunto
+                  de produtos às famílias aprovadas pela operação.
+                </p>
+              </article>
+
+              <article class="note-card">
+                <h3>Regras de produto</h3>
+                <p>
+                  O escopo previsto trabalha com <strong>bikes</strong>, <strong>baterias</strong>,
+                  <strong>bikes RVD</strong> e linha <strong>ONN</strong>, será
+                  necessário validar códigos, grupos, marcas ou outra classificação confiável.
+                </p>
+              </article>
+
+              <article class="note-card">
+                <h3>Relatórios e devolutiva</h3>
+                <p>
+                  O relatório já é montado em mock. O próximo passo é decidir destino real de e-mail,
+                  formato final, reenvio e eventual retorno da contagem ao Sankhya.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" id="banco">
+          <div class="section-heading">
+            <span class="eyebrow">Banco de dados</span>
+            <h2>O que já existe, o que cada tabela faz e o que precisa existir na fase real</h2>
+            <p>
+              A base abaixo documenta o desenho necessário para operar o módulo de estoque de forma
+              consistente. Nesta fase, boa parte do valor já está em funcionamento no mock, inclusive
+              persistência de histórico, eventos e relatório.
+            </p>
+          </div>
+
+          <div class="database-grid">
+            <article class="db-card">
+              <h3><code>public.funcionarios</code></h3>
+              <p>Cadastro de pessoas que acessam o portal, com CPF, nome, cargo e vínculo operacional.</p>
+            </article>
+            <article class="db-card">
+              <h3><code>public.inventory_stores</code></h3>
+              <p>Catálogo local de lojas atendidas pelo módulo de estoque.</p>
+            </article>
+            <article class="db-card">
+              <h3><code>public.inventory_store_assignments</code></h3>
+              <p>Relaciona loja e colaborador, sustentando quem pode operar ou ser supervisionado.</p>
+            </article>
+            <article class="db-card">
+              <h3><code>public.inventory_count_policies</code></h3>
+              <p>Guarda janela padrão de contagem, timezone e regra operacional vigente.</p>
+            </article>
+            <article class="db-card">
+              <h3><code>public.inventory_checklist_templates</code></h3>
+              <p>Define o cabeçalho do checklist usado pelo supervisor.</p>
+            </article>
+            <article class="db-card">
+              <h3><code>public.inventory_checklist_template_items</code></h3>
+              <p>Lista as tarefas que compõem o checklist padrão aplicado às novas contagens.</p>
+            </article>
+            <article class="db-card">
+              <h3><code>public.inventory_counts</code></h3>
+              <p>É o coração do processo: cabeçalho da contagem, revisão, acurácia, status e snapshot do checklist.</p>
+            </article>
+            <article class="db-card">
+              <h3><code>public.inventory_count_items</code></h3>
+              <p>Persistência do detalhe sistema x físico, diferença, justificativa e categoria do produto.</p>
+            </article>
+            <article class="db-card">
+              <h3><code>public.inventory_count_events</code></h3>
+              <p>Auditoria de gerar, salvar, finalizar, reabrir e demais movimentos relevantes.</p>
+            </article>
+            <article class="db-card">
+              <h3><code>public.inventory_report_notifications</code></h3>
+              <p>Guarda o payload mock do relatório ou do e-mail que a contagem deve produzir.</p>
+            </article>
+          </div>
+
+          <div class="database-callouts">
+            <article class="callout-card">
+              <h3>O que já está resolvido no mock</h3>
+              <ul>
+                <li>Persistência de contagem, itens, eventos e histórico.</li>
+                <li>Checklist aplicado por template.</li>
+                <li>Evidência antes/depois dentro do snapshot da contagem.</li>
+                <li>Relatório final com base em dados estruturados.</li>
+              </ul>
+            </article>
+
+            <article class="callout-card">
+              <h3>O que precisa ser criado ou confirmado para a fase real</h3>
+              <ul>
+                <li>Mapeamento exato do Sankhya para famílias de produto do estoque.</li>
+                <li>Regra oficial de loja x estoquista no cadastro operacional.</li>
+                <li>Definição de storage real para fotos do checklist.</li>
+                <li>Contrato de devolutiva por e-mail e eventual retorno ao Sankhya.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel" id="proximos-passos">
+          <div class="section-heading">
+            <span class="eyebrow">Próximos passos</span>
+            <h2>Como esse projeto evolui depois da homologação</h2>
+            <p>
+              Depois da validação visual e operacional, a evolução natural do documento é conectar o
+              mock ao processo real, fortalecendo integração, evidência e governança da rotina.
+            </p>
+          </div>
+
+          <div class="roadmap-grid">
+            <article class="roadmap-card">
+              <strong>Fase 1</strong>
+              <h3>Homologação assistida</h3>
+              <p>
+                Ajuste de UX, refinamento do fluxo, treinamento e validação da rotina com massa mock
+                persistente.
+              </p>
+            </article>
+            <article class="roadmap-card">
+              <strong>Fase 2</strong>
+              <h3>Ligação com fonte real</h3>
+              <p>
+                Conectar ao Sankhya para leitura oficial do estoque 3005 e validar critérios de
+                produto, saldo e fechamento.
+              </p>
+            </article>
+            <article class="roadmap-card">
+              <strong>Fase 3</strong>
+              <h3>Governança e evidência</h3>
+              <p>
+                Migrar fotos do checklist para storage dedicado, revisar trilha de auditoria e
+                consolidar permissões finais da v2.
+              </p>
+            </article>
+            <article class="roadmap-card">
+              <strong>Fase 4</strong>
+              <h3>Operação expandida</h3>
+              <p>
+                Ativar devolutiva formal, histórico analítico, relatórios por loja e possíveis novos
+                departamentos consumidores da informação.
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
